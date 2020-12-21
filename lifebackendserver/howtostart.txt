@@ -1,0 +1,25 @@
+# Mongo Start
+sudo mongod --dbpath /usr/local/var/mongodb
+
+#Mongo bash
+mongo
+
+
+# node
+npm init # for creating new node project
+
+# To run file
+node index.js
+#install nodemon
+npm install -g nodemon
+
+# node mon is used when file changes it will automatically refersh Server
+nodemon jsfilename.js #to run
+
+
+# Start with docker file
+docker-compose -f ExpressBlog-Compose.yml up -d --build
+
+PORTS:
+DB Express:  8081
+BACKEND SERVER:  9000

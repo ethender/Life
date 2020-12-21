@@ -1,0 +1,4 @@
+package-lock.json*
+life/node_modules/
+life-mobile/node_modules/
+lifebackendserver/node_modules/
