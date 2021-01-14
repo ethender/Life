@@ -20,6 +20,9 @@ nodemon jsfilename.js #to run
 # Start with docker file
 docker-compose -f ExpressBlog-Compose.yml up -d --build
 
+#logs check
+sudo docker logs --details containerid
+
 PORTS:
 DB Express:  8081
 BACKEND SERVER:  9000

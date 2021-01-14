@@ -17,13 +17,22 @@ class Home extends React.Component{
 
     constructor(props){
         super(props);
-        this.redirectCounter = this.redirectCounter.bind(this);
         this.componentDidMount = this.componentDidMount.bind(this);
+
+        /*
+            Redirects
+        */
+        this.redirectCounter = this.redirectCounter.bind(this);
+        this.redirectSprint = this.redirectSprint.bind(this);
     }
 
     redirectCounter(){
         console.log(window.location.origin);
         this.props.history.push("/counter");
+    }
+
+    redirectSprint(){
+        this.props.history.push("/sprint");
     }
 
     componentDidMount(){
@@ -52,7 +61,7 @@ class Home extends React.Component{
                         <h3>Sprint-Management</h3>
                     </Col>
                     <Col>
-                        <Button variant="light">
+                        <Button variant="light" onClick={this.redirectSprint}>
                             <img class="logo" src={sprints} alt="sprint" />
                         </Button>
                     </Col>
