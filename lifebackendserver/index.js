@@ -1,7 +1,9 @@
 const express = require('express')
+var cors = require('cors')
 const app = express()
 
 var bodyParser = require('body-parser')
+app.use(cors())
 app.use(bodyParser.json())
 
 const SprintORM = require('./src/sprint')
